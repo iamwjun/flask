@@ -7,7 +7,7 @@ from json import dumps
 from flask.ext.jsonpify import jsonpify
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] == 'mysql+pymysql://park:park@121.41.51.151:3306/park?charset=utf8'
+app.config['SQLALCHEMY_DATABASE_URI'] == 'mysql+pymysql://root:@127.0.0.1:3306/demo?charset=utf8'
 db = SQLAlchemy(app)
 
 class parking_lot(Resource):
